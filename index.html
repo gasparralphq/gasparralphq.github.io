@@ -1,32 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
+
 <head>
-  <title>My Portfolio - Ralph Gaspar</title>
-	<!--link to main.css stylesheet-->
-	<link rel = "stylesheet" type = "text/css" href = "/css/main.css">
+	<meta charset = "UTF=8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale = 1">
+	<title>My Portfolio - Ralph Gaspar</title>
+	<link href = "CSS/bootstrap.css" rel = "stylesheet" type = "text/css">
+	<link href = "CSS/style.css" rel = "stylesheet" type = "text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
-<body>
-  
-  <nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Ralph Gaspar!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:gaspar.ralphquitco@gmail.com">email</a></li>
-        		<li><a href="https://github.com/gasparralphq.>github.com/gasparralphq</a></li>
+
+<body data-spy = "scroll" data-target = ".navbar" data-offset = "10">
+
+	<!--Navbar-->
+	<nav class = "navbar navbar-expand-md bg-light navbar-light fixed-top">
+		<!--Navbar button Collapsible-->
+		<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navcollapse">
+		<span class = "navbar-toggler-icon"></span>
+		</button>
+
+		<!--Navbar links-->
+		<div class = "collapse navbar-collapse" id = "navcollapse">
+			<ul class = "navbar-nav">
+				<li class = "nav-item"><a class = "nav-link page-scroll hover_link" href = "#Home">HOME</a></li>
+				<li class = "nav-item"><a class = "nav-link page-scroll hover_link" href = "#About_me">ABOUT</a></li>
+				<li class = "nav-item"><a class = "nav-link page-scroll hover_link" href = "#Skills">SKILLS</a></li>
+				<li class = "nav-item"><a class = "nav-link page-scroll hover_link" href = "#Experience">EXPERIENCE</a></li>
+				<li class = "nav-item"><a class = "nav-link page-scroll hover_link" href = "#Contact">CONTACT</a></li>
 			</ul>
-		</footer>
-    
+		</div>
+	</nav>
+	<!--Full width header Image-->
+	<header class = "full-width-header-image" id = "Home">
+		<div class = "container-fluid">
+			<div class = "row">
+				<div class = "col-md-12 text-white text-left" id = "text_container">
+					<h1 class = "display-1">Hi I'm Ralph</h1>
+					<h1 class = "display-4">A Developer, Programmer</h1>
+					<p id = "myquote">"Think Twice, Code Once."</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--Section-->
+	<section>
+		<div class = "container-fluid" id = "About_me">
+			<div class = "row">
+				<div class = "col-md-12" id = "about_me">
+					<h1 class = "display-4 text-center">About Me</h1>
+					<center><img src = "images/divider_line.png" alt = "line_divider" height = "40" width = "400"></center><br>
+					<div class = "row">
+						<div class = "col-md-5">
+							<center><img src = "images/picko.png" alt = "mypic" id = "my_pic" class = "responsive_picture"></center>
+						</div>
+						<div class = "col-md-7">
+							<p id = "about_me_text" class = "text-justify">&nbsp;&nbsp;&nbsp;Hi! I'm <b>Ralph Gaspar</b>, I graduated at STI COLLEGE Caloocan with  a Degree in Information Technology. I have a deep interest in technology, for me developing or creating using different kinds of technology is so powerful. It feels like a video game where you can make a tool that can help you or other people make the life we live in much easier.<br><br>&nbsp;&nbsp;&nbsp;My passion is developing and to explore more kinds of different programming language and its ideas on how they can affect our technology.<br><br>&nbsp;&nbsp;&nbsp;I have a short experience in Web Developing because i mainly do is software development. But i like to take the opportunity to try, learn and study or perhaps master the field of web development.<br><br><b>"My goal in life is to create a software or an application that can solve complex problems and gives convinience to other peoples daily work."</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Skills Section-->
+		<div class = "container-fluid" id = "Skills">
+			<div class = "row">
+				<div class = "col-md-12" id = "my_skills">
+					<h1 class = "display-4 text-center">My Skills</h1>
+					<center><img src = "images/divider_line.png" alt = "line_divider" height = "40" width = "400"></center>
+					<div class = "row">
+						<div class = "col-md-6">
+							<p id = "skill_title">Web Development</p><br>
+							<p id = "my_skills_text" >&nbsp;&nbsp;&nbsp;Web Development is the first thing that i leaned when i entered Software Development particularly PHP. PHP is the first programming language that i learned in our web programming subject and also my favorite when it comes to building websites.<br><br>&nbsp;&nbsp;&nbsp;I have a short experience in using Scientiffic Python and R programming language in my previous job and a lot of experience in building softwares using Visual Basic 6.0. Though it is old and its not having an update anymore. You can still build a greate software out of it.</p>
+						</div>
+						<div class = "col-md-6">
+							<p id = "skill_title">Softwares</p><br>
+							<div class = "row">
+								<div class = "col-md-6" id = "img_office">
+									<center><img src = "images/office.png" height = "150" width = "250"></center>
+								</div>
+								<div class = "col-md-6" id = "img_vb">
+									<center><img src = "images/vb.png" height = "130" width = "250"></center>
+								</div>
+							</div>
+							<div class = "row">
+								<div class = "col-md-6" id = "img_sublime2">
+									<center><img src = "images/sublimet2.png" height = "120" width = "150"></center>
+								</div>
+								<div class = "col-md-6" id = "img_arcmap">
+									<center><img src = "images/arcmap.png" height = "120" width = "230"></center>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Works-->
+		<div class = "container-fluid" id = "Experience">
+			<div class = "row">
+				<div class = "col-md-12" id = "work_exp">
+					<h1 class = "display-4 text-center">Professional Experience</h1>
+					<center><img src = "images/divider_line.png" alt = "line_divider" height = "40" width = "400"></center>
+					<p id = "works_text"><b>DOST PAGASA - PHILCCAP</b> (Depart of Science and Technology Philippine Atmospheric, Geophysical and Astronomical Services Administration Section - Philippine Climate Change Adaptation Project) BIR, Rd, Diliman, Quezon City, Metro Manila.<br>
+						<b>Research Assistant</b><br><b>Job Duties and Responsibilities</b></p><br>
+						<ul>
+							<li>Carry out extraction and collection of relevant data.</li>
+							<li>Conversion of Climate Model output to GIS format</li>
+							<li>Conversion of NETCDF files to TIFF and GRID image using ArcGIS ArcMap.</li>
+							<li>Set-up of new computer application softwares relavant to the function of section.</li>
+							<li>Provide assistance in designing and development of the web page for Climate Change Projection in the Philippines.</li>
+							<li>Coordinate various activities to be conducted under the project such as trainings/workshops.</li>
+							<li>Perform other activies that may be required by the Project Leader.
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class = "container-fluid" id = "Contact">
+			<div class = "row">
+				<div class = "col-md-12" id = "contact">
+					<h1 class = "display-4 text-center">Contact Me</h1>
+					<center><img src = "images/divider_line.png" alt = "line_divider" height = "40" width = "400"></center><br>
+					<p id = "contact_text" class = "text-center">
+						<img src = "images/mobile_icon.png" alt = "mobile" height = "35" width = "40">+9163625491
+						<img src = "images/email.png" alt = "email" height = "30" width = "30">gaspar.ralphquitco@gmail.com
+						<img src = "images/github.png" alt = "github_icon" height = "15" width = "20"> Github: github.com/gasparralphq
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
-</html>
+</html
+
