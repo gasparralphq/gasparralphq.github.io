@@ -1,0 +1,140 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 10px;
+}
+
+body {
+  overflow-x: hidden; 
+}
+
+/* Full height image header */
+.full-width-header-image {
+  width: 100%;
+  height: calc(100% - 1px);
+  background-image: url("../images/mac.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+#text_container {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 1px;
+}
+
+#myquote {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#about_me {
+  padding: 60px; 
+  font-weight: 400px;
+  letter-spacing: 1px;
+}
+
+#about_me_text {
+  text-align: left;
+  font-size: 17px;
+  padding-right: 30px;
+}
+
+#my_pic {
+  position: relative;
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+}
+
+#my_skills {
+  padding: 60px;
+  background-color: #f0f0f0;
+  letter-spacing: 1px;
+}
+
+#my_skills_text {
+  font-size: 16px;
+  font-weight: 100px;
+  text-align: left;
+}
+
+#skill_title {
+  font-size: 35px;
+  text-align: center;
+}
+
+#webdev {
+  width: 100%;
+  height: calc(100% - 1px);
+  background-image: url("../images/bgwebdev.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#img_vb {
+  padding-bottom: 40px;
+}
+
+#img_sublime2 {
+  padding-bottom: 40px;
+}
+
+#img_arcmap {
+  padding-bottom: 40px;
+}
+
+#works_text {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+#work_exp {
+  padding-top: 60px;
+  letter-spacing: 1px;
+}
+
+#contact_text {
+  font-size: 16px;
+  text-align: left;
+}
+
+#contact {
+  padding-top: 60px;
+  letter-spacing: 1px;
+  background-color: #f0f0f0;
+}
+
+.hover_link {
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  border-radius: 0px !important;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+  .hover_link:hover {
+    text-decoration: none !important;
+    background-color: #b4b4b4 !important;
+    color: #fff;
+  }
+  .hover_link:focus {
+    text-decoration: none !important;
+    background-color: #b4b4b4 !important;
+    color: #fff !important;
+  }
+  .hover_link:active {
+    color: #fff !important;
+  }
