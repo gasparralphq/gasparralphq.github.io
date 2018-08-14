@@ -138,3 +138,74 @@ body {
   .hover_link:active {
     color: #fff !important;
   }
+
+ @-webkit-keyframes changeTrait {
+  0% {
+    content: "A Self-taught Developer";
+    color: #fff;
+  }
+  20% {
+    color: transparent;
+  }
+  40% {
+    content: "A Hobbyist Programmer";
+    color: #fff;
+  }
+  60% {
+    color: transparent;
+  }
+  80% {
+    content: "A Technology Enthusiast";
+    color: #fff;
+  }
+  100% {
+    color: transparent;
+  }
+}
+@keyframes changeLetter {
+  0% {
+    content: "A Self-taught Developer";
+    color: #fff;
+  }
+  20% {
+    color: transparent;
+  }
+  40% {
+    content: "A Hobbyist Programmer";
+    color: #fff;
+  }
+  60% {
+    color: transparent;
+  }
+  80% {
+    content: "A Technology Enthusiast";
+    color: #fff;
+  }
+  100% {
+    color: transparent;
+  }
+}
+.trait {
+  display: absolute;
+  align-items: left;
+}
+.trait:after {
+  -webkit-animation: changeTrait 15s linear infinite alternate;
+          animation: changeTrait 15s linear infinite alternate;
+  display: absolute;
+  content: "A Self-taught Developer";
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#my_navbar {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
