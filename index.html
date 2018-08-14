@@ -6,15 +6,15 @@
 	<meta http-equiv = "X-UA-Compatible" content = "IE = edge">
 	<meta name = "viewport" content = "width=device-width, initial-scale = 1">
 	<title>My Portfolio - Ralph Gaspar</title>
-	<link href = "css/bootstrap.css" rel = "stylesheet" type = "text/css">
-	<link href = "css/style.css" rel = "stylesheet" type = "text/css">
+	<link href = "CSS/bootstrap.css" rel = "stylesheet" type = "text/css">
+	<link href = "CSS/style.css" rel = "stylesheet" type = "text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 
 <body data-spy = "scroll" data-target = ".navbar" data-offset = "10">
 
 	<!--Navbar-->
-	<nav class = "navbar navbar-expand-md bg-light navbar-light fixed-top">
+	<nav class = "navbar navbar-expand-md bg-light navbar-light fixed-top" id = "my_navbar">
 		<!--Navbar button Collapsible-->
 		<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navcollapse">
 		<span class = "navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
 			<div class = "row">
 				<div class = "col-md-12 text-white text-left" id = "text_container">
 					<h1 class = "display-1">Hi I'm Ralph</h1>
-					<h1 class = "display-4">A Developer, Programmer</h1>
+					<h1 class = "display-4 trait"></h1>
 					<p id = "myquote">"Think Twice, Code Once."</p>
 				</div>
 			</div>
@@ -56,7 +56,7 @@
 							<center><img src = "images/picko.png" alt = "mypic" id = "my_pic" class = "responsive_picture"></center>
 						</div>
 						<div class = "col-md-6">
-							<p id = "about_me_text" class = "text-justify">&nbsp;&nbsp;&nbsp;Hi! I'm <b>Ralph Gaspar</b>, I graduated at STI COLLEGE Caloocan with  a Degree in Information Technology. I have a deep interest in technology, for me developing or creating using different kinds of technology is so powerful. It feels like a video game where you can make a tool that can help you or other people make the life we live in much easier.<br><br>&nbsp;&nbsp;&nbsp;My passion is developing and to explore more kinds of different programming language and its ideas on how they can affect our technology.<br><br>&nbsp;&nbsp;&nbsp;I have a short experience in Web Developing because i mainly do is software development. But i like to take the opportunity to try, learn and study or perhaps master the field of web development.<br><br><b>"My goal in life is to create a software or an application that can solve complex problems and gives convinience to other peoples daily work."</b></p>
+							<p id = "about_me_text">&nbsp;&nbsp;&nbsp;Hi! I'm <b>Ralph Gaspar</b>, I graduated at STI COLLEGE Caloocan with  a Degree in Information Technology. I have a deep interest in technology, for me developing or creating using different kinds of technology is so powerful. It feels like a video game where you can make a tool that can help you or other people make the life we live in much easier.<br><br>&nbsp;&nbsp;&nbsp;My passion is developing and to explore more kinds of different programming language and its ideas on how they can affect our technology.<br><br>&nbsp;&nbsp;&nbsp;I have a short experience in Web Developing because i mainly do is software development. But i like to take the opportunity to try, learn and study or perhaps master the field of web development.<br><br><b>"My goal in life is to create a software or an application that can solve complex problems and gives convinience to other peoples daily work."</b></p>
 						</div>
 					</div>
 				</div>
@@ -126,9 +126,10 @@
 					<h1 class = "display-4 text-center">Contact Me</h1>
 					<center><img src = "images/divider_line.png" alt = "line_divider" height = "40" width = "400"></center><br>
 					<p id = "contact_text" class = "text-center">
-						<img src = "images/mobile_icon.png" alt = "mobile" height = "35" width = "40">+9163625491
-						<img src = "images/email.png" alt = "email" height = "30" width = "30">gaspar.ralphquitco@gmail.com
-						<img src = "images/github.png" alt = "github_icon" height = "15" width = "20"> Github: github.com/gasparralphq
+						<img src = "images/mobile_icon.png" alt = "mobile" height = "35" width = "40">+9163625491 
+						<img src = "images/email.png" alt = "email" height = "30" width = "30">gaspar.ralphquitco@gmail.com 
+						<img src = "images/linkedin.png" alt = "linkedin_icon" height = "15" width = "20"> linkedin.com/gasparralphq 
+						<img src = "images/github.png" alt = "github_icon" height = "15" width = "20"> github.com/gasparralphq 
 					</p>
 				</div>
 			</div>
@@ -137,6 +138,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		var $root = $('html, body');
+
+		$('a[href^="#"]').click(function() {
+		    var href = $.attr(this, 'href');
+
+		    $root.animate({
+		        scrollTop: $(href).offset().top
+		    }, 500, function () {
+		        window.location.hash = href;
+		    });
+
+		    return false;
+		});
+	</script>
 </body>
 </html
-
